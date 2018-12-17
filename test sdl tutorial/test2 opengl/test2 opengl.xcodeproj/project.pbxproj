@@ -1,0 +1,576 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		ABB2BCA221C5C545006F2D06 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABB2BCA121C5C545006F2D06 /* AppDelegate.swift */; };
+		ABB2BCA421C5C545006F2D06 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABB2BCA321C5C545006F2D06 /* ViewController.swift */; };
+		ABB2BCA621C5C549006F2D06 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ABB2BCA521C5C549006F2D06 /* Assets.xcassets */; };
+		ABB2BCA921C5C549006F2D06 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ABB2BCA721C5C549006F2D06 /* Main.storyboard */; };
+		ABB2BCB521C5C549006F2D06 /* test2_openglTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABB2BCB421C5C549006F2D06 /* test2_openglTests.swift */; };
+		ABB2BCC021C5C549006F2D06 /* test2_openglUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABB2BCBF21C5C549006F2D06 /* test2_openglUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		ABB2BCB121C5C549006F2D06 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = ABB2BC9621C5C545006F2D06 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = ABB2BC9D21C5C545006F2D06;
+			remoteInfo = "test2 opengl";
+		};
+		ABB2BCBC21C5C549006F2D06 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = ABB2BC9621C5C545006F2D06 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = ABB2BC9D21C5C545006F2D06;
+			remoteInfo = "test2 opengl";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		ABB2BC9E21C5C545006F2D06 /* test2 opengl.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "test2 opengl.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		ABB2BCA121C5C545006F2D06 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		ABB2BCA321C5C545006F2D06 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		ABB2BCA521C5C549006F2D06 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		ABB2BCA821C5C549006F2D06 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		ABB2BCAA21C5C549006F2D06 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ABB2BCAB21C5C549006F2D06 /* test2_opengl.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = test2_opengl.entitlements; sourceTree = "<group>"; };
+		ABB2BCB021C5C549006F2D06 /* test2 openglTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "test2 openglTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		ABB2BCB421C5C549006F2D06 /* test2_openglTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = test2_openglTests.swift; sourceTree = "<group>"; };
+		ABB2BCB621C5C549006F2D06 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ABB2BCBB21C5C549006F2D06 /* test2 openglUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "test2 openglUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		ABB2BCBF21C5C549006F2D06 /* test2_openglUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = test2_openglUITests.swift; sourceTree = "<group>"; };
+		ABB2BCC121C5C549006F2D06 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		ABB2BC9B21C5C545006F2D06 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ABB2BCAD21C5C549006F2D06 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ABB2BCB821C5C549006F2D06 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		ABB2BC9521C5C545006F2D06 = {
+			isa = PBXGroup;
+			children = (
+				ABB2BCA021C5C545006F2D06 /* test2 opengl */,
+				ABB2BCB321C5C549006F2D06 /* test2 openglTests */,
+				ABB2BCBE21C5C549006F2D06 /* test2 openglUITests */,
+				ABB2BC9F21C5C545006F2D06 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		ABB2BC9F21C5C545006F2D06 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				ABB2BC9E21C5C545006F2D06 /* test2 opengl.app */,
+				ABB2BCB021C5C549006F2D06 /* test2 openglTests.xctest */,
+				ABB2BCBB21C5C549006F2D06 /* test2 openglUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		ABB2BCA021C5C545006F2D06 /* test2 opengl */ = {
+			isa = PBXGroup;
+			children = (
+				ABB2BCA121C5C545006F2D06 /* AppDelegate.swift */,
+				ABB2BCA321C5C545006F2D06 /* ViewController.swift */,
+				ABB2BCA521C5C549006F2D06 /* Assets.xcassets */,
+				ABB2BCA721C5C549006F2D06 /* Main.storyboard */,
+				ABB2BCAA21C5C549006F2D06 /* Info.plist */,
+				ABB2BCAB21C5C549006F2D06 /* test2_opengl.entitlements */,
+			);
+			path = "test2 opengl";
+			sourceTree = "<group>";
+		};
+		ABB2BCB321C5C549006F2D06 /* test2 openglTests */ = {
+			isa = PBXGroup;
+			children = (
+				ABB2BCB421C5C549006F2D06 /* test2_openglTests.swift */,
+				ABB2BCB621C5C549006F2D06 /* Info.plist */,
+			);
+			path = "test2 openglTests";
+			sourceTree = "<group>";
+		};
+		ABB2BCBE21C5C549006F2D06 /* test2 openglUITests */ = {
+			isa = PBXGroup;
+			children = (
+				ABB2BCBF21C5C549006F2D06 /* test2_openglUITests.swift */,
+				ABB2BCC121C5C549006F2D06 /* Info.plist */,
+			);
+			path = "test2 openglUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		ABB2BC9D21C5C545006F2D06 /* test2 opengl */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ABB2BCC421C5C549006F2D06 /* Build configuration list for PBXNativeTarget "test2 opengl" */;
+			buildPhases = (
+				ABB2BC9A21C5C545006F2D06 /* Sources */,
+				ABB2BC9B21C5C545006F2D06 /* Frameworks */,
+				ABB2BC9C21C5C545006F2D06 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "test2 opengl";
+			productName = "test2 opengl";
+			productReference = ABB2BC9E21C5C545006F2D06 /* test2 opengl.app */;
+			productType = "com.apple.product-type.application";
+		};
+		ABB2BCAF21C5C549006F2D06 /* test2 openglTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ABB2BCC721C5C549006F2D06 /* Build configuration list for PBXNativeTarget "test2 openglTests" */;
+			buildPhases = (
+				ABB2BCAC21C5C549006F2D06 /* Sources */,
+				ABB2BCAD21C5C549006F2D06 /* Frameworks */,
+				ABB2BCAE21C5C549006F2D06 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				ABB2BCB221C5C549006F2D06 /* PBXTargetDependency */,
+			);
+			name = "test2 openglTests";
+			productName = "test2 openglTests";
+			productReference = ABB2BCB021C5C549006F2D06 /* test2 openglTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		ABB2BCBA21C5C549006F2D06 /* test2 openglUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ABB2BCCA21C5C549006F2D06 /* Build configuration list for PBXNativeTarget "test2 openglUITests" */;
+			buildPhases = (
+				ABB2BCB721C5C549006F2D06 /* Sources */,
+				ABB2BCB821C5C549006F2D06 /* Frameworks */,
+				ABB2BCB921C5C549006F2D06 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				ABB2BCBD21C5C549006F2D06 /* PBXTargetDependency */,
+			);
+			name = "test2 openglUITests";
+			productName = "test2 openglUITests";
+			productReference = ABB2BCBB21C5C549006F2D06 /* test2 openglUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		ABB2BC9621C5C545006F2D06 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "Marc Partensky";
+				TargetAttributes = {
+					ABB2BC9D21C5C545006F2D06 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					ABB2BCAF21C5C549006F2D06 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = ABB2BC9D21C5C545006F2D06;
+					};
+					ABB2BCBA21C5C549006F2D06 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = ABB2BC9D21C5C545006F2D06;
+					};
+				};
+			};
+			buildConfigurationList = ABB2BC9921C5C545006F2D06 /* Build configuration list for PBXProject "test2 opengl" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = ABB2BC9521C5C545006F2D06;
+			productRefGroup = ABB2BC9F21C5C545006F2D06 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				ABB2BC9D21C5C545006F2D06 /* test2 opengl */,
+				ABB2BCAF21C5C549006F2D06 /* test2 openglTests */,
+				ABB2BCBA21C5C549006F2D06 /* test2 openglUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		ABB2BC9C21C5C545006F2D06 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ABB2BCA621C5C549006F2D06 /* Assets.xcassets in Resources */,
+				ABB2BCA921C5C549006F2D06 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ABB2BCAE21C5C549006F2D06 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ABB2BCB921C5C549006F2D06 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		ABB2BC9A21C5C545006F2D06 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ABB2BCA421C5C545006F2D06 /* ViewController.swift in Sources */,
+				ABB2BCA221C5C545006F2D06 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ABB2BCAC21C5C549006F2D06 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ABB2BCB521C5C549006F2D06 /* test2_openglTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ABB2BCB721C5C549006F2D06 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ABB2BCC021C5C549006F2D06 /* test2_openglUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		ABB2BCB221C5C549006F2D06 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = ABB2BC9D21C5C545006F2D06 /* test2 opengl */;
+			targetProxy = ABB2BCB121C5C549006F2D06 /* PBXContainerItemProxy */;
+		};
+		ABB2BCBD21C5C549006F2D06 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = ABB2BC9D21C5C545006F2D06 /* test2 opengl */;
+			targetProxy = ABB2BCBC21C5C549006F2D06 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		ABB2BCA721C5C549006F2D06 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				ABB2BCA821C5C549006F2D06 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		ABB2BCC221C5C549006F2D06 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		ABB2BCC321C5C549006F2D06 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		ABB2BCC521C5C549006F2D06 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "test2 opengl/test2_opengl.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "test2 opengl/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Marc-Corporation.test2-opengl";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+			};
+			name = Debug;
+		};
+		ABB2BCC621C5C549006F2D06 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "test2 opengl/test2_opengl.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "test2 opengl/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Marc-Corporation.test2-opengl";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+			};
+			name = Release;
+		};
+		ABB2BCC821C5C549006F2D06 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "test2 openglTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Marc-Corporation.test2-openglTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/test2 opengl.app/Contents/MacOS/test2 opengl";
+			};
+			name = Debug;
+		};
+		ABB2BCC921C5C549006F2D06 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "test2 openglTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Marc-Corporation.test2-openglTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/test2 opengl.app/Contents/MacOS/test2 opengl";
+			};
+			name = Release;
+		};
+		ABB2BCCB21C5C549006F2D06 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "test2 openglUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Marc-Corporation.test2-openglUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TEST_TARGET_NAME = "test2 opengl";
+			};
+			name = Debug;
+		};
+		ABB2BCCC21C5C549006F2D06 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "test2 openglUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Marc-Corporation.test2-openglUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TEST_TARGET_NAME = "test2 opengl";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		ABB2BC9921C5C545006F2D06 /* Build configuration list for PBXProject "test2 opengl" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ABB2BCC221C5C549006F2D06 /* Debug */,
+				ABB2BCC321C5C549006F2D06 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ABB2BCC421C5C549006F2D06 /* Build configuration list for PBXNativeTarget "test2 opengl" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ABB2BCC521C5C549006F2D06 /* Debug */,
+				ABB2BCC621C5C549006F2D06 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ABB2BCC721C5C549006F2D06 /* Build configuration list for PBXNativeTarget "test2 openglTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ABB2BCC821C5C549006F2D06 /* Debug */,
+				ABB2BCC921C5C549006F2D06 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ABB2BCCA21C5C549006F2D06 /* Build configuration list for PBXNativeTarget "test2 openglUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ABB2BCCB21C5C549006F2D06 /* Debug */,
+				ABB2BCCC21C5C549006F2D06 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = ABB2BC9621C5C545006F2D06 /* Project object */;
+}

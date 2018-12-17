@@ -1,0 +1,15 @@
+Undefined symbols for architecture x86_64:
+  "_SDL_CreateWindow", referenced from:
+      _main in sdl tutorial-326a0c.o
+  "_SDL_DestroyWindow", referenced from:
+      _main in sdl tutorial-326a0c.o
+  "_SDL_GetError", referenced from:
+      _main in sdl tutorial-326a0c.o
+  "_SDL_Init", referenced from:
+      _main in sdl tutorial-326a0c.o
+  "_SDL_PollEvent", referenced from:
+      _main in sdl tutorial-326a0c.o
+  "_SDL_Quit", referenced from:
+      _main in sdl tutorial-326a0c.o
+ld: symbol(s) not found for architecture x86_64
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
