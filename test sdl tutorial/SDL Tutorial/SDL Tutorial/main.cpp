@@ -19,9 +19,9 @@ int main( int argc, char *argv[] )
     
     SDL_Event windowEvent;
     
-    screen = SDL_GetWindowSurface(window);
-    color = SDL_MapRGB(screen->format, 0, 0, 0);
-    bgcolor = SDL_MapRGB(screen->format, 255, 255, 255);
+    //screen = SDL_GetWindowSurface(window);
+    //color = SDL_MapRGB(screen->format, 0, 0, 0);
+    //bgcolor = SDL_MapRGB(screen->format, 255, 255, 255);
     
     while ( true )
     {
@@ -40,4 +40,13 @@ int main( int argc, char *argv[] )
     SDL_Quit( );
     
     return EXIT_SUCCESS;
+}
+
+class Rectangle : public Shape, protected SDL_Rect {
+public:
+    void drawRectangle(SDL_Renderer*);
+};
+
+void Rectangle::drawRectangle(SDL_Renderer* renderer) {
+    SDL_RenderFillRect(renderer, this);
 }

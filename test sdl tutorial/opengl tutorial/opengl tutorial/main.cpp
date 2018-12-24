@@ -2,7 +2,7 @@
 
 #include <SDL2/SDL.h>
 #include <OpenGL/gl.h>
-#include <OpenGL/glu.h>
+#include <GL/glu.h>
 
 int main(int argc, char *argv[])
 {
@@ -24,7 +24,7 @@ int main(int argc, char *argv[])
         
         glClear(GL_COLOR_BUFFER_BIT);
         
-        (GL_TRIANGLES);
+        glBegin(GL_TRIANGLES);
         glColor3ub(255,0,0);    glVertex2d(-0.75,-0.75);
         glColor3ub(0,255,0);    glVertex2d(0,0.75);
         glColor3ub(0,0,255);    glVertex2d(0.75,-0.75);

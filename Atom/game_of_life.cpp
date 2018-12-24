@@ -22,7 +22,6 @@ int check(vector<int> input, vector<int> output, vector<int>rule, int i)
 }
 
 
-
 string display(vector<int> line, int size)
 {
   string text;
