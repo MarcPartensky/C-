@@ -1,39 +1,82 @@
+#include <SDL2/SDL.h>
 #include <iostream>
 
-#include <SDL2/SDL.h>
+#ifdef __APPLE__
 #include <OpenGL/gl.h>
-#include <GL/glu.h>
+#else
+#include <GL/gl.h>
+#endif
 
-int main(int argc, char *argv[])
+#ifdef __APPLE__
+#include <GLUT/glut.h>
+#else
+#include <GL/glut.h>
+#endif
+
+int main(int argc, char **argv)
 {
-    SDL_Init(SDL_INIT_VIDEO);
-    SDL_WM_SetCaption("Mon premier programme OpenGL !",NULL);
-    SDL_SetVideoMode(640, 480, 32, SDL_OPENGL);
+    // Notre fenêtre
     
-    bool continuer = true;
-    SDL_Event event;
+    SDL_Window* fenetre(0);
+    SDL_Event evenements;
+    bool terminer(false);
     
-    while (continuer)
+    
+    // Initialisation de la SDL
+    
+    if(SDL_Init(SDL_INIT_VIDEO) < 0)
     {
-        SDL_WaitEvent(&event);
-        switch(event.type)
-        {
-            case SDL_QUIT:
-                continuer = false;
-        }
+        std::cout << "Erreur lors de l'initialisation de la SDL : " << SDL_GetError() << std::endl;
+        SDL_Quit();
         
+        return -1;
+    }
+    
+    
+    // Création de la fenêtre
+    
+    fenetre = SDL_CreateWindow("Test SDL 2.0", SDL_WINDOWPOS_CENTERED, SDL_WINDOWPOS_CENTERED, 800, 600, SDL_WINDOW_SHOWN);
+    
+    if(fenetre == 0)
+    {
+        std::cout << "Erreur lors de la creation de la fenetre : " << SDL_GetError() << std::endl;
+        SDL_Quit();
+        
+        return -1;
+    }
+    
+    
+    // Boucle principale
+    
+    while(!terminer)
+    {
+        SDL_WaitEvent(&evenements);
+        
+        if(evenements.window.event == SDL_WINDOWEVENT_CLOSE)
+            terminer = true;
+        
+        // test du pauvre
+        /*
         glClear(GL_COLOR_BUFFER_BIT);
         
-        glBegin(GL_TRIANGLES);
-        glColor3ub(255,0,0);    glVertex2d(-0.75,-0.75);
-        glColor3ub(0,255,0);    glVertex2d(0,0.75);
-        glColor3ub(0,0,255);    glVertex2d(0.75,-0.75);
+        glBegin(GL_QUADS);
+        glColor3ub(0,0,255);
+        glVertex2d(-0.75,-0.75);
+        glVertex2d(-0.75,0.75);
+        glColor3ub(255,0,0);
+        glVertex2d(0.75,0.75);
+        glVertex2d(0.75,-0.75);
         glEnd();
         
         glFlush();
-        SDL_GL_SwapBuffers();
+        */
+        
     }
     
+    
+    // On quitte la SDL
+    
+    SDL_DestroyWindow(fenetre);
     SDL_Quit();
     
     return 0;
