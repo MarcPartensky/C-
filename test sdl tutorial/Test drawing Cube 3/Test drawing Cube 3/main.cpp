@@ -11,12 +11,14 @@
 #include <stdio.h>
 #include <stdbool.h>
 
+
 #define GL_GLEXT_PROTOTYPES
 
-#include <SDL.h>
+#include <OpenGL/gl.h>
+#include <SDL2/SDL.h>
 
-#include <GL/gl.h>
-#include <GL/glext.h>
+
+//bool GL_SILENCE_DEPRECATION = true; // No clue how to do it right
 
 static GLuint tri_vbo; /* the VBO id for vertex data */
 static GLuint tri_color_vbo; /* the VBO id for color data */
@@ -113,14 +115,14 @@ int main()
                                            850, 480, SDL_WINDOW_OPENGL | SDL_WINDOW_SHOWN);
     if (!mainwin) {
         fprintf(stderr, "ERROR:%s\n", SDL_GetError());
-        goto failure;
+        return EXIT_FAILURE;
     }
     
     /* create a context. */
     SDL_GLContext glctx = SDL_GL_CreateContext(mainwin);
     if (!glctx) {
         fprintf(stderr, "ERROR:%s\n", SDL_GetError());
-        goto cleanup;
+        return EXIT_FAILURE;
     }
     SDL_GL_SetSwapInterval(1);
     

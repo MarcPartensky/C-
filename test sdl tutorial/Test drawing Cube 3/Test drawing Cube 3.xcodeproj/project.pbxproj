@@ -7,22 +7,37 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0C3A333223A3D37E004CF446 /* SDL2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C3A333123A3D37E004CF446 /* SDL2.framework */; };
+		0C3D701423A3AAA9003AECBE /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C3D701323A3AAA9003AECBE /* OpenGL.framework */; };
 		AB5E7D4C21E7FB4C007BF496 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AB5E7D4B21E7FB4C007BF496 /* main.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		AB5E7D4621E7FB4C007BF496 /* CopyFiles */ = {
+		0C3D701923A3B253003AECBE /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AB5E7D4621E7FB4C007BF496 /* Copy Files */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = /usr/share/man/man1/;
 			dstSubfolderSpec = 0;
 			files = (
 			);
+			name = "Copy Files";
 			runOnlyForDeploymentPostprocessing = 1;
 		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		0C3A333123A3D37E004CF446 /* SDL2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SDL2.framework; path = ../../../../../../Library/Frameworks/SDL2.framework; sourceTree = "<group>"; };
+		0C3D701323A3AAA9003AECBE /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
 		AB5E7D4821E7FB4C007BF496 /* Test drawing Cube 3 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Test drawing Cube 3"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB5E7D4B21E7FB4C007BF496 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -32,17 +47,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0C3A333223A3D37E004CF446 /* SDL2.framework in Frameworks */,
+				0C3D701423A3AAA9003AECBE /* OpenGL.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0C3D700B23A28795003AECBE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0C3A333123A3D37E004CF446 /* SDL2.framework */,
+				0C3D701323A3AAA9003AECBE /* OpenGL.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		AB5E7D3F21E7FB4C007BF496 = {
 			isa = PBXGroup;
 			children = (
 				AB5E7D4A21E7FB4C007BF496 /* Test drawing Cube 3 */,
 				AB5E7D4921E7FB4C007BF496 /* Products */,
+				0C3D700B23A28795003AECBE /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -71,7 +98,8 @@
 			buildPhases = (
 				AB5E7D4421E7FB4C007BF496 /* Sources */,
 				AB5E7D4521E7FB4C007BF496 /* Frameworks */,
-				AB5E7D4621E7FB4C007BF496 /* CopyFiles */,
+				AB5E7D4621E7FB4C007BF496 /* Copy Files */,
+				0C3D701923A3B253003AECBE /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -88,7 +116,7 @@
 		AB5E7D4021E7FB4C007BF496 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 1010;
+				LastUpgradeCheck = 1120;
 				ORGANIZATIONNAME = "Marc Partensky";
 				TargetAttributes = {
 					AB5E7D4721E7FB4C007BF496 = {
@@ -239,7 +267,16 @@
 		AB5E7D5021E7FB4C007BF496 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(LOCAL_LIBRARY_DIR)/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/usr/local/Cellar/sdl2/2.0.10/lib,
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -247,7 +284,16 @@
 		AB5E7D5121E7FB4C007BF496 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(LOCAL_LIBRARY_DIR)/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/usr/local/Cellar/sdl2/2.0.10/lib,
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;

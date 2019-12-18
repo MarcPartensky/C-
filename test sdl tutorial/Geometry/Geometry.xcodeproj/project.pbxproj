@@ -7,11 +7,26 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0C3A333523A3D416004CF446 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C3A333423A3D416004CF446 /* OpenGL.framework */; };
+		0C3A333723A3D426004CF446 /* SDL2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C3A333623A3D426004CF446 /* SDL2.framework */; };
+		0C3A333823A3D426004CF446 /* SDL2.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0C3A333623A3D426004CF446 /* SDL2.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		0C3A333C23A3F76D004CF446 /* SceneOpenGL.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0C3A333A23A3F76D004CF446 /* SceneOpenGL.cpp */; };
+		0C4767CA23A413FF005D3198 /* Shader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0C4767C923A413FF005D3198 /* Shader.cpp */; };
 		AB58CBF822AE9A0F009EE4D8 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AB58CBF722AE9A0F009EE4D8 /* main.cpp */; };
-		AB58CC0022AEBF39009EE4D8 /* point.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AB58CBFE22AEBF38009EE4D8 /* point.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
+		0C3A333923A3D426004CF446 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				0C3A333823A3D426004CF446 /* SDL2.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		AB58CBF222AE9A0F009EE4D8 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -24,10 +39,22 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		0C3A333423A3D416004CF446 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
+		0C3A333623A3D426004CF446 /* SDL2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SDL2.framework; path = ../../../../../../Library/Frameworks/SDL2.framework; sourceTree = "<group>"; };
+		0C3A333A23A3F76D004CF446 /* SceneOpenGL.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = SceneOpenGL.cpp; sourceTree = "<group>"; };
+		0C3A333B23A3F76D004CF446 /* SceneOpenGL.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = SceneOpenGL.hpp; sourceTree = "<group>"; };
+		0C4767BF23A413FF005D3198 /* Shader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Shader.h; sourceTree = "<group>"; };
+		0C4767C123A413FF005D3198 /* couleur2D.frag */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = couleur2D.frag; sourceTree = "<group>"; };
+		0C4767C223A413FF005D3198 /* couleur3D.frag */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = couleur3D.frag; sourceTree = "<group>"; };
+		0C4767C323A413FF005D3198 /* texture.vert */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = texture.vert; sourceTree = "<group>"; };
+		0C4767C423A413FF005D3198 /* basique2D.frag */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = basique2D.frag; sourceTree = "<group>"; };
+		0C4767C523A413FF005D3198 /* couleur2D.vert */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = couleur2D.vert; sourceTree = "<group>"; };
+		0C4767C623A413FF005D3198 /* basique2D.vert */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = basique2D.vert; sourceTree = "<group>"; };
+		0C4767C723A413FF005D3198 /* texture.frag */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = texture.frag; sourceTree = "<group>"; };
+		0C4767C823A413FF005D3198 /* couleur3D.vert */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = couleur3D.vert; sourceTree = "<group>"; };
+		0C4767C923A413FF005D3198 /* Shader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Shader.cpp; sourceTree = "<group>"; };
 		AB58CBF422AE9A0F009EE4D8 /* Geometry */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Geometry; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB58CBF722AE9A0F009EE4D8 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
-		AB58CBFE22AEBF38009EE4D8 /* point.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = point.cpp; sourceTree = "<group>"; };
-		AB58CBFF22AEBF39009EE4D8 /* point.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = point.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,17 +62,44 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0C3A333523A3D416004CF446 /* OpenGL.framework in Frameworks */,
+				0C3A333723A3D426004CF446 /* SDL2.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0C3A333323A3D416004CF446 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0C3A333623A3D426004CF446 /* SDL2.framework */,
+				0C3A333423A3D416004CF446 /* OpenGL.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		0C4767C023A413FF005D3198 /* Shaders */ = {
+			isa = PBXGroup;
+			children = (
+				0C4767C123A413FF005D3198 /* couleur2D.frag */,
+				0C4767C823A413FF005D3198 /* couleur3D.vert */,
+				0C4767C223A413FF005D3198 /* couleur3D.frag */,
+				0C4767C323A413FF005D3198 /* texture.vert */,
+				0C4767C423A413FF005D3198 /* basique2D.frag */,
+				0C4767C523A413FF005D3198 /* couleur2D.vert */,
+				0C4767C623A413FF005D3198 /* basique2D.vert */,
+				0C4767C723A413FF005D3198 /* texture.frag */,
+			);
+			path = Shaders;
+			sourceTree = "<group>";
+		};
 		AB58CBEB22AE9A0F009EE4D8 = {
 			isa = PBXGroup;
 			children = (
 				AB58CBF622AE9A0F009EE4D8 /* Geometry */,
 				AB58CBF522AE9A0F009EE4D8 /* Products */,
+				0C3A333323A3D416004CF446 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -61,8 +115,11 @@
 			isa = PBXGroup;
 			children = (
 				AB58CBF722AE9A0F009EE4D8 /* main.cpp */,
-				AB58CBFE22AEBF38009EE4D8 /* point.cpp */,
-				AB58CBFF22AEBF39009EE4D8 /* point.hpp */,
+				0C4767C923A413FF005D3198 /* Shader.cpp */,
+				0C4767BF23A413FF005D3198 /* Shader.h */,
+				0C4767C023A413FF005D3198 /* Shaders */,
+				0C3A333B23A3F76D004CF446 /* SceneOpenGL.hpp */,
+				0C3A333A23A3F76D004CF446 /* SceneOpenGL.cpp */,
 			);
 			path = Geometry;
 			sourceTree = "<group>";
@@ -77,6 +134,7 @@
 				AB58CBF022AE9A0F009EE4D8 /* Sources */,
 				AB58CBF122AE9A0F009EE4D8 /* Frameworks */,
 				AB58CBF222AE9A0F009EE4D8 /* CopyFiles */,
+				0C3A333923A3D426004CF446 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -123,8 +181,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AB58CC0022AEBF39009EE4D8 /* point.cpp in Sources */,
 				AB58CBF822AE9A0F009EE4D8 /* main.cpp in Sources */,
+				0C4767CA23A413FF005D3198 /* Shader.cpp in Sources */,
+				0C3A333C23A3F76D004CF446 /* SceneOpenGL.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -246,6 +305,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(LOCAL_LIBRARY_DIR)/Frameworks",
+				);
+				"HEADER_SEARCH_PATHS[arch=*]" = (
+					/Library/Frameworks/SDL2.framework/Headers/,
+					/usr/local/Cellar/glm/0.9.9.5/include/,
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -254,6 +321,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(LOCAL_LIBRARY_DIR)/Frameworks",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
