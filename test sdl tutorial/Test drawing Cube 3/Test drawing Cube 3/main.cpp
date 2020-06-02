@@ -13,12 +13,11 @@
 
 
 #define GL_GLEXT_PROTOTYPES
+#define GL_SILENCE_DEPRECATION
 
 #include <OpenGL/gl.h>
-#include <SDL2/SDL.h>
+#include <SDL.h>
 
-
-//bool GL_SILENCE_DEPRECATION = true; // No clue how to do it right
 
 static GLuint tri_vbo; /* the VBO id for vertex data */
 static GLuint tri_color_vbo; /* the VBO id for color data */

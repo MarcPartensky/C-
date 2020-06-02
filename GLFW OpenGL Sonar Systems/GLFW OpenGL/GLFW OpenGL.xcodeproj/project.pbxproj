@@ -7,153 +7,164 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0C3A333223A3D37E004CF446 /* SDL2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C3A333123A3D37E004CF446 /* SDL2.framework */; };
-		0C3D701423A3AAA9003AECBE /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C3D701323A3AAA9003AECBE /* OpenGL.framework */; };
-		AB5E7D4C21E7FB4C007BF496 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AB5E7D4B21E7FB4C007BF496 /* main.cpp */; };
+		AB8035A02359D950007CFA82 /* resources in CopyFiles */ = {isa = PBXBuildFile; fileRef = AB80359E2359D851007CFA82 /* resources */; };
+		ABB9FA65233D1D8E00D33BE2 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = ABB9FA64233D1D8E00D33BE2 /* main.cpp */; };
+		ABB9FA6D233D1E1F00D33BE2 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ABB9FA6C233D1E1F00D33BE2 /* OpenGL.framework */; };
+		ABB9FA6F233D1EB400D33BE2 /* libGLEW.2.1.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = ABB9FA6E233D1EB400D33BE2 /* libGLEW.2.1.0.dylib */; };
+		ABB9FA71233D1EE300D33BE2 /* libglfw.3.3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = ABB9FA70233D1EE300D33BE2 /* libglfw.3.3.dylib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		0C3D701923A3B253003AECBE /* Embed Frameworks */ = {
+		AB80359F2359D932007CFA82 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
-			dstSubfolderSpec = 10;
+			dstSubfolderSpec = 7;
 			files = (
+				AB8035A02359D950007CFA82 /* resources in CopyFiles */,
 			);
-			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		AB5E7D4621E7FB4C007BF496 /* Copy Files */ = {
+		ABB9FA5F233D1D8E00D33BE2 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = /usr/share/man/man1/;
 			dstSubfolderSpec = 0;
 			files = (
 			);
-			name = "Copy Files";
 			runOnlyForDeploymentPostprocessing = 1;
 		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		0C3A333123A3D37E004CF446 /* SDL2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SDL2.framework; path = ../../../../../../Library/Frameworks/SDL2.framework; sourceTree = "<group>"; };
-		0C3D701323A3AAA9003AECBE /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
-		AB5E7D4821E7FB4C007BF496 /* Test drawing Cube 3 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Test drawing Cube 3"; sourceTree = BUILT_PRODUCTS_DIR; };
-		AB5E7D4B21E7FB4C007BF496 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		AB80359C23585FFF007CFA82 /* Shader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Shader.h; sourceTree = "<group>"; };
+		AB80359E2359D851007CFA82 /* resources */ = {isa = PBXFileReference; lastKnownFileType = folder; path = resources; sourceTree = "<group>"; };
+		AB8035A12359DC54007CFA82 /* SOIL2 */ = {isa = PBXFileReference; lastKnownFileType = folder; path = SOIL2; sourceTree = "<group>"; };
+		ABB9FA61233D1D8E00D33BE2 /* GLFW OpenGL */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "GLFW OpenGL"; sourceTree = BUILT_PRODUCTS_DIR; };
+		ABB9FA64233D1D8E00D33BE2 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		ABB9FA6C233D1E1F00D33BE2 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
+		ABB9FA6E233D1EB400D33BE2 /* libGLEW.2.1.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libGLEW.2.1.0.dylib; path = ../../../../../../usr/local/Cellar/glew/2.1.0/lib/libGLEW.2.1.0.dylib; sourceTree = "<group>"; };
+		ABB9FA70233D1EE300D33BE2 /* libglfw.3.3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libglfw.3.3.dylib; path = ../../../../../../usr/local/Cellar/glfw/3.3/lib/libglfw.3.3.dylib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		AB5E7D4521E7FB4C007BF496 /* Frameworks */ = {
+		ABB9FA5E233D1D8E00D33BE2 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0C3A333223A3D37E004CF446 /* SDL2.framework in Frameworks */,
-				0C3D701423A3AAA9003AECBE /* OpenGL.framework in Frameworks */,
+				ABB9FA71233D1EE300D33BE2 /* libglfw.3.3.dylib in Frameworks */,
+				ABB9FA6F233D1EB400D33BE2 /* libGLEW.2.1.0.dylib in Frameworks */,
+				ABB9FA6D233D1E1F00D33BE2 /* OpenGL.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0C3D700B23A28795003AECBE /* Frameworks */ = {
+		ABB9FA58233D1D8E00D33BE2 = {
 			isa = PBXGroup;
 			children = (
-				0C3A333123A3D37E004CF446 /* SDL2.framework */,
-				0C3D701323A3AAA9003AECBE /* OpenGL.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		AB5E7D3F21E7FB4C007BF496 = {
-			isa = PBXGroup;
-			children = (
-				AB5E7D4A21E7FB4C007BF496 /* Test drawing Cube 3 */,
-				AB5E7D4921E7FB4C007BF496 /* Products */,
-				0C3D700B23A28795003AECBE /* Frameworks */,
+				ABB9FA63233D1D8E00D33BE2 /* GLFW OpenGL */,
+				ABB9FA62233D1D8E00D33BE2 /* Products */,
+				ABB9FA6B233D1E1E00D33BE2 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
-		AB5E7D4921E7FB4C007BF496 /* Products */ = {
+		ABB9FA62233D1D8E00D33BE2 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				AB5E7D4821E7FB4C007BF496 /* Test drawing Cube 3 */,
+				ABB9FA61233D1D8E00D33BE2 /* GLFW OpenGL */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		AB5E7D4A21E7FB4C007BF496 /* Test drawing Cube 3 */ = {
+		ABB9FA63233D1D8E00D33BE2 /* GLFW OpenGL */ = {
 			isa = PBXGroup;
 			children = (
-				AB5E7D4B21E7FB4C007BF496 /* main.cpp */,
+				AB8035A12359DC54007CFA82 /* SOIL2 */,
+				AB80359E2359D851007CFA82 /* resources */,
+				ABB9FA64233D1D8E00D33BE2 /* main.cpp */,
+				AB80359C23585FFF007CFA82 /* Shader.h */,
 			);
-			path = "Test drawing Cube 3";
+			path = "GLFW OpenGL";
+			sourceTree = "<group>";
+		};
+		ABB9FA6B233D1E1E00D33BE2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				ABB9FA70233D1EE300D33BE2 /* libglfw.3.3.dylib */,
+				ABB9FA6E233D1EB400D33BE2 /* libGLEW.2.1.0.dylib */,
+				ABB9FA6C233D1E1F00D33BE2 /* OpenGL.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		AB5E7D4721E7FB4C007BF496 /* Test drawing Cube 3 */ = {
+		ABB9FA60233D1D8E00D33BE2 /* GLFW OpenGL */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = AB5E7D4F21E7FB4C007BF496 /* Build configuration list for PBXNativeTarget "Test drawing Cube 3" */;
+			buildConfigurationList = ABB9FA68233D1D8E00D33BE2 /* Build configuration list for PBXNativeTarget "GLFW OpenGL" */;
 			buildPhases = (
-				AB5E7D4421E7FB4C007BF496 /* Sources */,
-				AB5E7D4521E7FB4C007BF496 /* Frameworks */,
-				AB5E7D4621E7FB4C007BF496 /* Copy Files */,
-				0C3D701923A3B253003AECBE /* Embed Frameworks */,
+				ABB9FA5D233D1D8E00D33BE2 /* Sources */,
+				ABB9FA5E233D1D8E00D33BE2 /* Frameworks */,
+				ABB9FA5F233D1D8E00D33BE2 /* CopyFiles */,
+				AB80359F2359D932007CFA82 /* CopyFiles */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = "Test drawing Cube 3";
-			productName = "Test drawing Cube 3";
-			productReference = AB5E7D4821E7FB4C007BF496 /* Test drawing Cube 3 */;
+			name = "GLFW OpenGL";
+			productName = "GLFW OpenGL";
+			productReference = ABB9FA61233D1D8E00D33BE2 /* GLFW OpenGL */;
 			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		AB5E7D4021E7FB4C007BF496 /* Project object */ = {
+		ABB9FA59233D1D8E00D33BE2 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 1120;
+				LastUpgradeCheck = 1110;
 				ORGANIZATIONNAME = "Marc Partensky";
 				TargetAttributes = {
-					AB5E7D4721E7FB4C007BF496 = {
-						CreatedOnToolsVersion = 10.1;
+					ABB9FA60233D1D8E00D33BE2 = {
+						CreatedOnToolsVersion = 11.0;
 					};
 				};
 			};
-			buildConfigurationList = AB5E7D4321E7FB4C007BF496 /* Build configuration list for PBXProject "Test drawing Cube 3" */;
+			buildConfigurationList = ABB9FA5C233D1D8E00D33BE2 /* Build configuration list for PBXProject "GLFW OpenGL" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
-			mainGroup = AB5E7D3F21E7FB4C007BF496;
-			productRefGroup = AB5E7D4921E7FB4C007BF496 /* Products */;
+			mainGroup = ABB9FA58233D1D8E00D33BE2;
+			productRefGroup = ABB9FA62233D1D8E00D33BE2 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				AB5E7D4721E7FB4C007BF496 /* Test drawing Cube 3 */,
+				ABB9FA60233D1D8E00D33BE2 /* GLFW OpenGL */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		AB5E7D4421E7FB4C007BF496 /* Sources */ = {
+		ABB9FA5D233D1D8E00D33BE2 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AB5E7D4C21E7FB4C007BF496 /* main.cpp in Sources */,
+				ABB9FA65233D1D8E00D33BE2 /* main.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		AB5E7D4D21E7FB4C007BF496 /* Debug */ = {
+		ABB9FA66233D1D8E00D33BE2 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -185,7 +196,6 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "-";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -212,7 +222,7 @@
 			};
 			name = Debug;
 		};
-		AB5E7D4E21E7FB4C007BF496 /* Release */ = {
+		ABB9FA67233D1D8E00D33BE2 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -244,7 +254,6 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "-";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
@@ -264,37 +273,31 @@
 			};
 			name = Release;
 		};
-		AB5E7D5021E7FB4C007BF496 /* Debug */ = {
+		ABB9FA69233D1D8E00D33BE2 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(LOCAL_LIBRARY_DIR)/Frameworks",
-				);
-				HEADER_SEARCH_PATHS = /Library/Frameworks/SDL2.framework/Headers/;
+				HEADER_SEARCH_PATHS = /usr/local/include;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					/usr/local/Cellar/sdl2/2.0.10/lib,
+					/usr/local/Cellar/glew/2.1.0/lib,
+					/usr/local/Cellar/glfw/3.3/lib,
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
 		};
-		AB5E7D5121E7FB4C007BF496 /* Release */ = {
+		ABB9FA6A233D1D8E00D33BE2 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(LOCAL_LIBRARY_DIR)/Frameworks",
-				);
-				HEADER_SEARCH_PATHS = /Library/Frameworks/SDL2.framework/Headers/;
+				HEADER_SEARCH_PATHS = /usr/local/include;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					/usr/local/Cellar/sdl2/2.0.10/lib,
+					/usr/local/Cellar/glew/2.1.0/lib,
+					/usr/local/Cellar/glfw/3.3/lib,
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -303,25 +306,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		AB5E7D4321E7FB4C007BF496 /* Build configuration list for PBXProject "Test drawing Cube 3" */ = {
+		ABB9FA5C233D1D8E00D33BE2 /* Build configuration list for PBXProject "GLFW OpenGL" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				AB5E7D4D21E7FB4C007BF496 /* Debug */,
-				AB5E7D4E21E7FB4C007BF496 /* Release */,
+				ABB9FA66233D1D8E00D33BE2 /* Debug */,
+				ABB9FA67233D1D8E00D33BE2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		AB5E7D4F21E7FB4C007BF496 /* Build configuration list for PBXNativeTarget "Test drawing Cube 3" */ = {
+		ABB9FA68233D1D8E00D33BE2 /* Build configuration list for PBXNativeTarget "GLFW OpenGL" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				AB5E7D5021E7FB4C007BF496 /* Debug */,
-				AB5E7D5121E7FB4C007BF496 /* Release */,
+				ABB9FA69233D1D8E00D33BE2 /* Debug */,
+				ABB9FA6A233D1D8E00D33BE2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = AB5E7D4021E7FB4C007BF496 /* Project object */;
+	rootObject = ABB9FA59233D1D8E00D33BE2 /* Project object */;
 }

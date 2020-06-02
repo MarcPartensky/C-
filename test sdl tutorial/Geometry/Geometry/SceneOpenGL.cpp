@@ -63,6 +63,10 @@ bool SceneOpenGL::init() {
     // Double Buffer
     SDL_GL_SetAttribute(SDL_GL_DOUBLEBUFFER, 1);
     SDL_GL_SetAttribute(SDL_GL_DEPTH_SIZE, 24);
+    
+    // Switching from legacy profile to core profile
+    SDL_GL_SetAttribute(SDL_GL_CONTEXT_PROFILE_MASK, SDL_GL_CONTEXT_PROFILE_CORE);
+//    SDL_GL_SetAttribute(SDL_GL_CONTEXT_PROFILE_MASK, SDL_GL_CONTEXT_PROFILE_COMPATIBILITY);
     return true;
 }
 
@@ -86,34 +90,35 @@ void SceneOpenGL::main() {
 
 
 void SceneOpenGL::draw() {
-    Shader colorShader("Shaders/couleur3D.vert", "Shaders/couleur3D.frag");
-    colorShader.load();
     glUseProgram(colorShader.getProgramID());
+    
+    glm::mat4 projection;
+    glm::mat4 modelview;
     
     projection = glm::perspective(70.0, (double) width/height, 1.0, 100.0);
     modelview = glm::mat4(1.0);
-    
-    // Transformations of the matrix modelview
-    modelview = translate(modelview, glm::vec3(0.4, 0.0, 1.0));
-    modelview = rotate(modelview, 60.0f, glm::vec3(0.0, 0.0, 1.0));
+
     
 //    // verticies
 //    float vs1[] = {0.0, 0.0,   0.5, 0.0,   0.0, 0.5,          // Triangle 1
 //                        -0.8, -0.8,   -0.3, -0.8,   -0.8, -0.3};   // Triangle 2
 //    glVertexAttribPointer(0, 2, GL_FLOAT, GL_FALSE, 0, vs1);
 //    glEnableVertexAttribArray(0);
-//
-//    // colors
+
+    // colors
     float colors[] = {0.0, 204.0 / 255.0, 1.0,    0.0, 204.0 / 255.0, 1.0,    0.0, 204.0 / 255.0, 1.0};
     glVertexAttribPointer(1, 3, GL_FLOAT, GL_FALSE, 0, colors);
     glEnableVertexAttribArray(1);
-//
     
     float vertices[] = {-0.5, -0.5, -1.0,   0.0, 0.5, -1.0,   0.5, -0.5, -1.0};
     glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 0, vertices);
     glEnableVertexAttribArray(0);
     // On envoie les matrices au shader
-
+    
+    // Transformations of the matrix modelview
+    modelview = translate(modelview, glm::vec3(0.4, 0.0, 1.0));
+    modelview = rotate(modelview, 60.0f, glm::vec3(0.0, 0.0, 1.0));
+    
     glUniformMatrix4fv(glGetUniformLocation(colorShader.getProgramID(), "modelview"), 1, GL_FALSE, value_ptr(modelview));
     glUniformMatrix4fv(glGetUniformLocation(colorShader.getProgramID(), "projection"), 1, GL_FALSE, value_ptr(projection));
     
@@ -137,3 +142,10 @@ void SceneOpenGL::show() {
     draw();
     swap();
 }
+
+bool SceneOpenGL::loadColorShader() {
+    Shader colorShader("Shaders/couleur3D.vert", "Shaders/couleur3D.frag");
+    std::cout << "Shaders loaded successfully" << std::endl;
+    return colorShader.load();
+}
+

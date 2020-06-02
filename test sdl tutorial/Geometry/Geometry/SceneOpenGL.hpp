@@ -46,6 +46,7 @@ public:
     void clear();
     void swap();
     void draw();
+    bool loadColorShader();
     
     // Attributes
 public:
@@ -59,6 +60,7 @@ protected:
     SDL_Event event;
     glm::mat4 projection;
     glm::mat4 modelview;
+    Shader colorShader;
 };
 
 

@@ -18,6 +18,7 @@
 
 int main(int argc, const char * argv[]) {
     SceneOpenGL scene("main", 800, 600);
+    scene.loadColorShader();
     bool success = scene.init();
     if (!success) {
         std::cout << "Failed" << std::endl;
